@@ -13,8 +13,7 @@ function sumNum(date) {
             allSum.push(sumWay)
     }
     let total = allSum.reduce((a, b) => a + b)
-    let totalArr = [total]
-    let totalAll = (""+totalArr).split("")
+    let totalAll = (""+total).split("")
         .map(item => Number(item))
         .reduce((a, b) => a + b)
     if(totalAll>=10){
